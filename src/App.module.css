@@ -1,0 +1,55 @@
+.app {
+  background: #3B3B3B;
+  width: 1256px;
+  height: 781px;
+  margin: 36px 12px;
+  border-radius: 3px;
+  padding: 32px;
+  color: white;
+  position: relative;
+}
+
+.firstSection {
+  position: absolute;
+  top: 94px;
+  left: 32px;
+  width: 1211px;
+  height: 269px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 0px 0px 0px;
+  background: #757575;
+
+}
+
+.secondSection {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1185px;
+  height: 350px;
+  top: 400px;
+  left: 32px;
+  border: 1px solid #9B9B9B;
+  padding-top: 0px; /* Reduce the gap */
+}
+
+.recentTransactionsHeading {
+  position: absolute;
+  top: 400px; /* Adjust this value to position the heading appropriately */
+  left: 32px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .firstSection, .secondSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstSection > div, .secondSection > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
